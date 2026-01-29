@@ -804,7 +804,6 @@ body {
 .Testimonials-text {
     font-size: 1.2rem;
 }
-
 /* Testim */
 .test-con {
     margin: 2rem 10rem;
@@ -895,10 +894,11 @@ body {
 /* footer */
 .footer{
     background: var(--dark);
-    margin: 0 10rem;
+    margin: 0 0rem;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 2rem;
+    margin-top: 4rem;
 }
 .header-of-footer{
     display: flex;
@@ -1031,4 +1031,122 @@ body {
 .footer-foot-link{
     color: var(--gray);
     font-weight: 400;
+}
+
+/* Contact Us */
+.contact {
+    padding: 0 11rem;
+}
+.contact-us {
+    display: flex;
+    gap: 2rem;
+    margin-top: 6rem;
+    align-items: center;
+}
+.contactus-h3 {
+    background: var(--green);
+    padding: 1rem 1.2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.contactus-text {
+    font-size: 1.2rem;
+}
+.contactus-con {
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 4rem;
+    padding-left: 6rem;
+    padding-right: 0;
+    background-color: var(--gray-darker);
+    border-radius: 1.4rem;
+}
+.contact-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+.contact-right {
+    width: 40%;
+    text-align: right;
+}
+.radio-group {
+    display: flex;
+    gap: 1.2rem;
+}
+.radio-custom {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--black);
+    position: relative;
+}
+.radio-custom input {
+    display: none;
+}
+.radio-circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.radio-circle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: rgb(0, 255, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+.radio-custom input:checked + .radio-circle::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.name input {
+    padding: 0.9rem 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--black);
+    outline: none;
+}
+.email input {
+    padding: 0.9rem 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--black);
+    outline: none;
+}
+.message textarea {
+    padding: 0.9rem 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--black);
+    outline: none;
+    resize: none;
+    height: 200px;
+}
+button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 60px;
+    background: var(--dark);
+    color: #fff;
+    cursor: pointer;
 }
